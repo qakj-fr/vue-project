@@ -15,10 +15,10 @@ import AddSupplierInfo from '@/components/supplier/AddSupplierInfo'
 import DetailsSupplierInfo from '@/components/supplier/DetailsSupplierInfo'
 import UpdateSupplierInfo from '@/components/supplier/UpdateSupplierInfo'
 import CheckCenter from '@/components/supplier/CheckCenter'
+import AddCheckCenter from '@/components/supplier/AddCheckCenter'
 import ChannelMGT from '@/components/supplier/ChannelMGT'
 import CallMGT from '@/components/supplier/CallMGT'
 import CommodityInfo from '@/components/commodity/CommodityInfo'
-import PurchaseMGT from '@/components/commodity/PurchaseMGT'
 import PurchaseReturn from '@/components/commodity/PurchaseReturn'
 import ScheduleMGT from '@/components/work/ScheduleMGT'
 import AddressList from '@/components/work/AddressList'
@@ -90,6 +90,11 @@ export default new Router({
           component: CheckCenter
         },
         {
+          path: 'addCheckCenter',
+          name: 'AddCheckCenter',
+          component: AddCheckCenter
+        },
+        {
           path: 'channelMGT',
           name: 'ChannelMGT',
           component: ChannelMGT
@@ -148,6 +153,11 @@ export default new Router({
           path: 'updateSupplierInfo',
           name: 'UpdateSupplierInfo',
           component: UpdateSupplierInfo
+        },
+        {
+          path: 'addProduct',
+          name: 'AddProduct',
+          component: AddProduct
         },
       ]
     }
