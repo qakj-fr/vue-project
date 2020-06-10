@@ -15,20 +15,21 @@ import AddSupplierInfo from '@/components/supplier/AddSupplierInfo'
 import DetailsSupplierInfo from '@/components/supplier/DetailsSupplierInfo'
 import UpdateSupplierInfo from '@/components/supplier/UpdateSupplierInfo'
 import CheckCenter from '@/components/supplier/CheckCenter'
-import AddCheckCenter from '@/components/supplier/AddCheckCenter'
 import ChannelMGT from '@/components/supplier/ChannelMGT'
 import CallMGT from '@/components/supplier/CallMGT'
 import CommodityInfo from '@/components/commodity/CommodityInfo'
-import PurchaseReturn from '@/components/commodity/PurchaseReturn'
 import PurchaseMGT from '@/components/commodity/PurchaseMGT'
-import AddProduct from '@/components/commodity/AddProduct'
-import ScheduleMGT from '@/components/work/ScheduleMGT'
-import AddressList from '@/components/work/AddressList'
-import CommunicationMGT from '@/components/work/CommunicationMGT'
+import PurchaseReturn from '@/components/commodity/PurchaseReturn'
+import ScheduleMGT from '@/components/work/schedulemgt/ScheduleMGT'
+import Addschedulemgt from '@/components/work/schedulemgt/Addschedulemgt'
+import AddressList from '@/components/work/addressList/AddressList'
+import InsertAddressList from '@/components/work/addressList/InsertAddressList'
+import CommunicationMGT from '@/components/work/communicationMGT/CommunicationMGT'
+import EditCommunicationMGT from '@/components/work/communicationMGT/EditCommunicationMGT'
+import AddCommunicationMGT from '@/components/work/communicationMGT/AddCommunicationMGT'
 import Noticeboard from '@/components/work/Noticeboard'
 
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
@@ -92,11 +93,6 @@ export default new Router({
           component: CheckCenter
         },
         {
-          path: 'addCheckCenter',
-          name: 'AddCheckCenter',
-          component: AddCheckCenter
-        },
-        {
           path: 'channelMGT',
           name: 'ChannelMGT',
           component: ChannelMGT
@@ -127,14 +123,34 @@ export default new Router({
           component: ScheduleMGT
         },
         {
+          path: 'addschedulemgt',
+          name: 'Addschedulemgt',
+          component: Addschedulemgt
+        },
+        {
           path: 'addressList',
           name: 'AddressList',
           component: AddressList
         },
         {
+          path: 'insertAddressList',
+          name: 'InsertAddressList',
+          component: InsertAddressList
+        },
+        {
           path: 'communicationMGT',
           name: 'CommunicationMGT',
           component: CommunicationMGT
+        },
+         {
+          path: 'editCommunicationMGT',
+          name: 'EditCommunicationMGT',
+          component: EditCommunicationMGT
+        },
+         {
+          path: 'addCommunicationMGT',
+          name: 'AddCommunicationMGT',
+          component: AddCommunicationMGT
         },
         {
           path: 'noticeboard',
@@ -155,11 +171,6 @@ export default new Router({
           path: 'updateSupplierInfo',
           name: 'UpdateSupplierInfo',
           component: UpdateSupplierInfo
-        },
-        {
-          path: 'addProduct',
-          name: 'AddProduct',
-          component: AddProduct
         },
       ]
     }

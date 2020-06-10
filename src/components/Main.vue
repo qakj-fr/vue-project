@@ -124,7 +124,8 @@
 
 
    <!--右边的内容-->
-   <div style="width: 850px; border: 1px solid #DDDDDD; float: left; margin-left: 10px;">
+   <div style="width: 850px; border: 0px solid #DDDDDD; float: left; margin-left: 10px;">
+     
      <router-view />
    </div>
   </div>
@@ -132,7 +133,8 @@
   </div>
 </template>
 
-<script>
+	
+<script >
   export default{
     data:function(){
       return {
